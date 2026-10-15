@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pool Party Standings</title>
+<meta name="description" content="RedZone Crew Fantasy Football League 2026 season standings">
+<style>:root{--bg:#f5f6f8;--surface:#fff;--surface-2:#eef1f4;--text:#15181d;--muted:#5f6875;--border:#dfe3e8;--accent:#2f6fde;--accent-soft:#e7effd;--gold:#b7791f;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1216;--surface:#171b21;--surface-2:#20262e;--text:#e7eaee;--muted:#9aa3b0;--border:#2b323c;--accent:#6c9cff;--accent-soft:#1b2740;--gold:#e3aa4c;color-scheme:dark}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.page{max-width:880px;margin:0 auto;padding:32px 16px 48px}
+.eyebrow{margin:0;color:var(--accent);font-size:13px;font-weight:650;text-transform:uppercase;letter-spacing:.08em}
+h1{margin:4px 0 4px;font-size:clamp(28px,5vw,40px);letter-spacing:-.02em}
+.sub{margin:0;color:var(--muted)}
+.controls{display:flex;justify-content:flex-end;margin:20px 0 10px}
+.switch{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-weight:600;user-select:none}
+.switch input{position:absolute;opacity:0;width:1px;height:1px}
+.track{width:40px;height:22px;border-radius:999px;background:var(--surface-2);border:1px solid var(--border);position:relative;transition:background .15s}
+.thumb{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--muted);transition:transform .15s,background .15s}
+.switch input:checked+.track{background:var(--accent-soft);border-color:var(--accent)}
+.switch input:checked+.track .thumb{transform:translateX(18px);background:var(--accent)}
+.switch input:focus-visible+.track{outline:2px solid var(--accent);outline-offset:2px}
+.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+th{color:var(--muted);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.num{text-align:right}
+.name{white-space:normal;font-weight:600}
+tr.leader td{background:var(--accent-soft)}
+tr.bot td{color:var(--muted)}
+.bot-tag{display:inline-block;margin-right:6px;padding:0 6px;border-radius:4px;background:var(--surface-2);border:1px solid var(--border);font-size:11px;font-weight:700;letter-spacing:.06em;vertical-align:1px}
+.note{margin:14px 2px 0;color:var(--muted);font-size:14px}
+@media (max-width:560px){.opt{display:none}th,td{padding:9px 8px}}table.sortable td.sorted{font-weight:750;font-size:1.08em}
+table.sortable td.best{color:var(--accent);font-weight:650}
+table.sortable td.sorted.best{font-weight:800}
+.sort{font:inherit;color:inherit;text-transform:inherit;letter-spacing:inherit;background:none;border:0;padding:0;cursor:pointer}
+.sort:hover{color:var(--text)}
+.sort::after{content:"";display:inline-block;width:1.1em;text-align:center}
+th[aria-sort="ascending"] .sort,th[aria-sort="descending"] .sort{color:var(--accent)}
+th[aria-sort="ascending"] .sort::after{content:"▲"}
+th[aria-sort="descending"] .sort::after{content:"▼"}</style>
+</head>
+<body>
+<main class="page">
+<header>
+  <p class="eyebrow">RedZone Crew Fantasy Football League · 2026 season</p>
+  <h1>Season standings</h1>
+  <p class="sub">Through week 5 · updated Oct 14, 2026</p>
+</header>
+<div class="controls">
+  <label class="switch"><input type="checkbox" id="show-bots"><span class="track"><span class="thumb"></span></span>Show bots</label>
+</div>
+<div class="table-wrap">
+<table class="sortable" id="humans"><thead><tr><th class="num" data-dir="asc">#</th><th data-dir="asc">Franchise</th><th class="num" data-dir="desc" aria-sort="descending">Points</th><th class="num" data-dir="desc">Wk 5</th><th class="num" data-dir="desc">Correct</th><th class="num opt" data-dir="desc">%</th><th class="num opt" data-dir="desc">Upsets</th><th class="num opt" data-dir="desc">Upset %</th><th class="num" data-dir="desc">Weeks won</th></tr></thead><tbody><tr class="leader"><td class="num">1</td><td class="name" data-sort="Bad News Browns">Bad News Browns</td><td class="num pts">426</td><td class="num" data-sort="65">65</td><td class="num" data-sort="50">50/78</td><td class="num opt" data-sort="0.641">64%</td><td class="num opt" data-sort="10">10/20</td><td class="num opt" data-sort="0.5">50%</td><td class="num">2</td></tr><tr class=""><td class="num">2</td><td class="name" data-sort="Bad &amp; Bourgie">Bad &amp; Bourgie</td><td class="num pts">423</td><td class="num" data-sort="80">80</td><td class="num" data-sort="46">46/78</td><td class="num opt" data-sort="0.5897">59%</td><td class="num opt" data-sort="4">4/11</td><td class="num opt" data-sort="0.3636">36%</td><td class="num">0</td></tr><tr class=""><td class="num">3</td><td class="name" data-sort="The Fantasy Jewells">The Fantasy Jewells</td><td class="num pts">420</td><td class="num" data-sort="88">88</td><td class="num" data-sort="42">42/70</td><td class="num opt" data-sort="0.6">60%</td><td class="num opt" data-sort="7">7/17</td><td class="num opt" data-sort="0.4118">41%</td><td class="num">1</td></tr><tr class=""><td class="num">4</td><td class="name" data-sort="M.I.L.F. $">M.I.L.F. $</td><td class="num pts">391</td><td class="num" data-sort="54">54</td><td class="num" data-sort="44">44/76</td><td class="num opt" data-sort="0.5789">58%</td><td class="num opt" data-sort="3">3/10</td><td class="num opt" data-sort="0.3">30%</td><td class="num">0</td></tr><tr class=""><td class="num">5</td><td class="name" data-sort="Egomaniacs">Egomaniacs</td><td class="num pts">383</td><td class="num" data-sort="68">68</td><td class="num" data-sort="41">41/79</td><td class="num opt" data-sort="0.519">52%</td><td class="num opt" data-sort="3">3/15</td><td class="num opt" data-sort="0.2">20%</td><td class="num">0</td></tr><tr class=""><td class="num">6</td><td class="name" data-sort="The Sledge">The Sledge</td><td class="num pts">377</td><td class="num" data-sort="78">78</td><td class="num" data-sort="42">42/61</td><td class="num opt" data-sort="0.6885">69%</td><td class="num opt" data-sort="6">6/10</td><td class="num opt" data-sort="0.6">60%</td><td class="num">1</td></tr><tr class=""><td class="num">7</td><td class="name" data-sort="The HeartBreak Kids">The HeartBreak Kids</td><td class="num pts">278</td><td class="num" data-sort="-1">—</td><td class="num" data-sort="33">33/62</td><td class="num opt" data-sort="0.5323">53%</td><td class="num opt" data-sort="7">7/20</td><td class="num opt" data-sort="0.35">35%</td><td class="num">0</td></tr><tr class=""><td class="num">8</td><td class="name" data-sort="Morgy Morg and The Funky Bunch">Morgy Morg and The Funky Bunch</td><td class="num pts">267</td><td class="num" data-sort="42">42</td><td class="num" data-sort="29">29/63</td><td class="num opt" data-sort="0.4603">46%</td><td class="num opt" data-sort="6">6/23</td><td class="num opt" data-sort="0.2609">26%</td><td class="num">0</td></tr><tr class=""><td class="num">9</td><td class="name" data-sort="The Dolfs">The Dolfs</td><td class="num pts">220</td><td class="num" data-sort="-1">—</td><td class="num" data-sort="25">25/44</td><td class="num opt" data-sort="0.5682">57%</td><td class="num opt" data-sort="4">4/13</td><td class="num opt" data-sort="0.3077">31%</td><td class="num">0</td></tr><tr class=""><td class="num">10</td><td class="name" data-sort="Big Ol&#39; TDs">Big Ol&#39; TDs</td><td class="num pts">160</td><td class="num" data-sort="-1">—</td><td class="num" data-sort="19">19/32</td><td class="num opt" data-sort="0.5938">59%</td><td class="num opt" data-sort="3">3/6</td><td class="num opt" data-sort="0.5">50%</td><td class="num">1</td></tr></tbody></table>
+<table class="sortable" id="bots" hidden><thead><tr><th class="num" data-dir="asc">#</th><th data-dir="asc">Franchise</th><th class="num" data-dir="desc" aria-sort="descending">Points</th><th class="num" data-dir="desc">Wk 5</th><th class="num" data-dir="desc">Correct</th><th class="num opt" data-dir="desc">%</th><th class="num opt" data-dir="desc">Upsets</th><th class="num opt" data-dir="desc">Upset %</th><th class="num" data-dir="desc">Weeks won</th></tr></thead><tbody><tr class="bot"><td class="num">1</td><td class="name" data-sort="Spread Bot"><span class="bot-tag">BOT</span>Spread Bot</td><td class="num pts">448</td><td class="num" data-sort="81">81</td><td class="num" data-sort="49">49/79</td><td class="num opt" data-sort="0.6203">62%</td><td class="num opt" data-sort="0">0/0</td><td class="num opt" data-sort="-1">—</td><td class="num">1</td></tr><tr class=""><td class="num">2</td><td class="name" data-sort="Bad News Browns">Bad News Browns</td><td class="num pts">426</td><td class="num" data-sort="65">65</td><td class="num" data-sort="50">50/78</td><td class="num opt" data-sort="0.641">64%</td><td class="num opt" data-sort="10">10/20</td><td class="num opt" data-sort="0.5">50%</td><td class="num">2</td></tr><tr class=""><td class="num">3</td><td class="name" data-sort="Bad &amp; Bourgie">Bad &amp; Bourgie</td><td class="num pts">423</td><td class="num" data-sort="80">80</td><td class="num" data-sort="46">46/78</td><td class="num opt" data-sort="0.5897">59%</td><td class="num opt" data-sort="4">4/11</td><td class="num opt" data-sort="0.3636">36%</td><td class="num">0</td></tr><tr class=""><td class="num">4</td><td class="name" data-sort="The Fantasy Jewells">The Fantasy Jewells</td><td class="num pts">420</td><td class="num" data-sort="88">88</td><td class="num" data-sort="42">42/70</td><td class="num opt" data-sort="0.6">60%</td><td class="num opt" data-sort="7">7/17</td><td class="num opt" data-sort="0.4118">41%</td><td class="num">1</td></tr><tr class="bot"><td class="num">5</td><td class="name" data-sort="Majority Bot"><span class="bot-tag">BOT</span>Majority Bot</td><td class="num pts">417</td><td class="num" data-sort="67">67</td><td class="num" data-sort="47">47/79</td><td class="num opt" data-sort="0.5949">59%</td><td class="num opt" data-sort="5">5/12</td><td class="num opt" data-sort="0.4167">42%</td><td class="num">0</td></tr><tr class=""><td class="num">6</td><td class="name" data-sort="M.I.L.F. $">M.I.L.F. $</td><td class="num pts">391</td><td class="num" data-sort="54">54</td><td class="num" data-sort="44">44/76</td><td class="num opt" data-sort="0.5789">58%</td><td class="num opt" data-sort="3">3/10</td><td class="num opt" data-sort="0.3">30%</td><td class="num">0</td></tr><tr class=""><td class="num">7</td><td class="name" data-sort="Egomaniacs">Egomaniacs</td><td class="num pts">383</td><td class="num" data-sort="68">68</td><td class="num" data-sort="41">41/79</td><td class="num opt" data-sort="0.519">52%</td><td class="num opt" data-sort="3">3/15</td><td class="num opt" data-sort="0.2">20%</td><td class="num">0</td></tr><tr class=""><td class="num">8</td><td class="name" data-sort="The Sledge">The Sledge</td><td class="num pts">377</td><td class="num" data-sort="78">78</td><td class="num" data-sort="42">42/61</td><td class="num opt" data-sort="0.6885">69%</td><td class="num opt" data-sort="6">6/10</td><td class="num opt" data-sort="0.6">60%</td><td class="num">1</td></tr><tr class=""><td class="num">9</td><td class="name" data-sort="The HeartBreak Kids">The HeartBreak Kids</td><td class="num pts">278</td><td class="num" data-sort="-1">—</td><td class="num" data-sort="33">33/62</td><td class="num opt" data-sort="0.5323">53%</td><td class="num opt" data-sort="7">7/20</td><td class="num opt" data-sort="0.35">35%</td><td class="num">0</td></tr><tr class=""><td class="num">10</td><td class="name" data-sort="Morgy Morg and The Funky Bunch">Morgy Morg and The Funky Bunch</td><td class="num pts">267</td><td class="num" data-sort="42">42</td><td class="num" data-sort="29">29/63</td><td class="num opt" data-sort="0.4603">46%</td><td class="num opt" data-sort="6">6/23</td><td class="num opt" data-sort="0.2609">26%</td><td class="num">0</td></tr><tr class=""><td class="num">11</td><td class="name" data-sort="The Dolfs">The Dolfs</td><td class="num pts">220</td><td class="num" data-sort="-1">—</td><td class="num" data-sort="25">25/44</td><td class="num opt" data-sort="0.5682">57%</td><td class="num opt" data-sort="4">4/13</td><td class="num opt" data-sort="0.3077">31%</td><td class="num">0</td></tr><tr class=""><td class="num">12</td><td class="name" data-sort="Big Ol&#39; TDs">Big Ol&#39; TDs</td><td class="num pts">160</td><td class="num" data-sort="-1">—</td><td class="num" data-sort="19">19/32</td><td class="num opt" data-sort="0.5938">59%</td><td class="num opt" data-sort="3">3/6</td><td class="num opt" data-sort="0.5">50%</td><td class="num">0</td></tr></tbody></table>
+</div>
+<p class="note" id="bot-note" hidden>Spread Bot picks every favorite, most confidence on the biggest line. Majority Bot picks whatever most of the league picked, most confidence on the most lopsided votes. A bot that beats a week's winner takes that week's win.</p>
+<p class="note">Places are by points; ties share a place. Upsets are correct picks on the underdog out of underdog picks made. A tied game counts as a wrong pick, as MFL does.</p>
+</main>
+<script>
+document.querySelectorAll('table.sortable').forEach(table => {
+  const body = table.tBodies[0];
+  [...body.rows].forEach((row, i) => { row.dataset.order = i; });
+  const heads = [...table.tHead.rows[0].cells];
+  const key = (row, col) => {
+    const cell = row.cells[col];
+    const raw = cell.dataset.sort ?? cell.textContent.trim();
+    const n = Number(raw);
+    return raw !== '' && !Number.isNaN(n) ? n : raw.toLowerCase();
+  };
+  const emphasize = col => [...body.rows].forEach(row =>
+    [...row.cells].forEach((cell, i) => cell.classList.toggle('sorted', i === col)));
+
+  heads.forEach((th, col) => {
+    if (th.dataset.dir !== 'desc' || th.dataset.best === 'none') return;
+    const values = [...body.rows].map(row => key(row, col));
+    if (!values.every(v => typeof v === 'number') || values.every(v => v === values[0])) return;
+    const best = Math.max(...values);
+    [...body.rows].forEach((row, i) => row.cells[col].classList.toggle('best', values[i] === best));
+  });
+  emphasize(heads.findIndex(th => th.hasAttribute('aria-sort')));
+
+  heads.forEach((th, col) => {
+    if (!th.dataset.dir) return;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'sort';
+    btn.textContent = th.textContent;
+    th.replaceChildren(btn);
+    btn.addEventListener('click', () => {
+      const dir = th.getAttribute('aria-sort') === (th.dataset.dir === 'asc' ? 'ascending' : 'descending')
+        ? (th.dataset.dir === 'asc' ? 'desc' : 'asc')
+        : th.dataset.dir;
+      const sign = dir === 'asc' ? 1 : -1;
+      const rows = [...body.rows].sort((a, b) => {
+        const x = key(a, col), y = key(b, col);
+        const c = typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y));
+        return c * sign || a.dataset.order - b.dataset.order;
+      });
+      body.append(...rows);
+      heads.forEach(h => h.removeAttribute('aria-sort'));
+      th.setAttribute('aria-sort', dir === 'asc' ? 'ascending' : 'descending');
+      emphasize(col);
+    });
+  });
+});
+const box = document.getElementById('show-bots');
+const sync = () => {
+  document.getElementById('humans').hidden = box.checked;
+  document.getElementById('bots').hidden = !box.checked;
+  document.getElementById('bot-note').hidden = !box.checked;
+};
+box.addEventListener('change', sync);
+sync();
+</script>
+</body>
+</html>
